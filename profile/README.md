@@ -1,14 +1,33 @@
 # AirwaveDB
 
-Open data for internet radio stations and streams.
+Open directory of internet radio stations and playable stream endpoints.
 
-AirwaveDB separates station identity and metadata from playable stream endpoints, then publishes generated formats for applications and data consumers.
+AirwaveDB collects station metadata, normalizes duplicate records, keeps playable stream URLs separately, and publishes the result as JSON, NDJSON, CSV, and M3U data.
+
+## API
+
+Public JSON data:
+
+```text
+https://raw.githubusercontent.com/AirwaveDB/api/main/v1
+```
+
+Examples:
+
+```text
+https://raw.githubusercontent.com/AirwaveDB/api/main/v1/index.json
+https://raw.githubusercontent.com/AirwaveDB/api/main/v1/countries/jp.json
+https://raw.githubusercontent.com/AirwaveDB/api/main/v1/stations.json
+https://raw.githubusercontent.com/AirwaveDB/api/main/v1/streams.json
+```
+
+See [`AirwaveDB/api`](https://github.com/AirwaveDB/api) for the endpoint list and data model.
 
 ## Repositories
 
-- [`database`](https://github.com/AirwaveDB/database) — station metadata, countries, languages, categories, and source mappings
-- [`streams`](https://github.com/AirwaveDB/streams) — direct stream endpoints and country M3U playlists
-- [`api`](https://github.com/AirwaveDB/api) — generated JSON and NDJSON datasets
+- [`api`](https://github.com/AirwaveDB/api) — public JSON and NDJSON endpoints
+- [`database`](https://github.com/AirwaveDB/database) — canonical station metadata and source mappings
+- [`streams`](https://github.com/AirwaveDB/streams) — playable stream endpoints and country M3U playlists
 - [`checker`](https://github.com/AirwaveDB/checker) — independent stream availability checks
 - [`website`](https://github.com/AirwaveDB/website) — station browser and player
 
