@@ -2,7 +2,7 @@
 
 Open directory of internet radio stations and playable stream endpoints.
 
-AirwaveDB collects station metadata, normalizes duplicate records, keeps playable stream URLs separately, and publishes the result as JSON, NDJSON, CSV, and M3U data.
+AirwaveDB collects station metadata, normalizes duplicate records, keeps playable stream URLs separately, and publishes consumer-ready JSON and NDJSON data alongside M3U playlists for compatible clients.
 
 ## API
 
@@ -25,11 +25,13 @@ See [`AirwaveDB/api`](https://github.com/AirwaveDB/api) for the endpoint list an
 
 ## Repositories
 
-- [`api`](https://github.com/AirwaveDB/api) — public JSON and NDJSON endpoints
+- [`api`](https://github.com/AirwaveDB/api) — generated public JSON and NDJSON endpoints
 - [`database`](https://github.com/AirwaveDB/database) — canonical station metadata and source mappings
-- [`streams`](https://github.com/AirwaveDB/streams) — playable stream endpoints and country M3U playlists
+- [`streams`](https://github.com/AirwaveDB/streams) — canonical playable stream endpoints and country M3U playlists
 - [`checker`](https://github.com/AirwaveDB/checker) — independent stream availability checks
 - [`website`](https://github.com/AirwaveDB/website) — station browser and player
+
+See [`ARCHITECTURE.md`](../ARCHITECTURE.md) for repository responsibilities and data flow.
 
 ## Data sources
 
